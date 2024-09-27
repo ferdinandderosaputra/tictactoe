@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/sweetalert2/dist/sweetalert2.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player-info">
+        <h2>Player Information</h2>
+        <p>Player 1 (X): <span id="player1-score">0</span></p>
+        <p>Player 2 (O): <span id="player2-score">0</span></p>
+        <p>Current Player: <span id="current-player">X</span></p>
+        <button id="reset-game" class="btn">Reset Game</button>
+      </div>
+      <div class="tictactoe-board">
+        <div class="board-row">
+          <div class="cell" onclick="makeMove(this, 0)"></div>
+          <div class="cell" onclick="makeMove(this, 1)"></div>
+          <div class="cell" onclick="makeMove(this, 2)"></div>
+        </div>
+        <div class="board-row">
+          <div class="cell" onclick="makeMove(this, 3)"></div>
+          <div class="cell" onclick="makeMove(this, 4)"></div>
+          <div class="cell" onclick="makeMove(this, 5)"></div>
+        </div>
+        <div class="board-row">
+          <div class="cell" onclick="makeMove(this, 6)"></div>
+          <div class="cell" onclick="makeMove(this, 7)"></div>
+          <div class="cell" onclick="makeMove(this, 8)"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Created by Ferdinand Dero Saputra |
+        <i class="bx-fw bx bxl-github"></i>
+        <a href="https://github.com/ferdinandderosaputra" class="boxremove"
+          >GitHub</a
+        >
+        <i class="bx-fw bx bxl-instagram"></i>
+        <a href="https://instagram.com/ferzchills" class="boxremove"
+          >Instagram</a
+        >
+        <i class="bx-fw bx bxl-whatsapp"></i>
+        <a href="https://wa.me/+628970149200" class="boxremove"> Whatsapp</a>
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- boxicons nih -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- end boxicons -->
+  </body>
+</html>

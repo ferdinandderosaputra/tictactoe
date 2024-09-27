@@ -1,0 +1,153 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html,
+body,
+* {
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(135deg, #3a006f, #1a003a);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  flex-grow: 1;
+}
+
+.player-info,
+.tictactoe-board {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* .boxremove {
+  text-decoration: none;
+  color: #7b00ff;
+} */
+
+.player-info {
+  width: 30%;
+}
+
+.tictactoe-board {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background-color: #5a00b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-user-select: auto;
+  user-select: none;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #7b00ff;
+}
+
+/* respon px 768 */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .player-info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .tictactoe-board {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .cell {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    font-size: 1.5rem;
+  }
+}
+
+/* px respon 480 */
+@media (max-width: 480px) {
+  .cell {
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+    font-size: 1.2rem;
+  }
+
+  .player-info,
+  .tictactoe-board {
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #2a002f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
